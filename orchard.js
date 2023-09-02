@@ -49,9 +49,10 @@ const pinkPrice = .55
     Log `totalAcres` to the console.
 */
 
-var totalAcres = 0
+// calculates total acres picked.
+let totalAcres = 0;
 
-for (let i = 0; i<7; i++){
+for (let i = 0; i < 7; i++){
     totalAcres += fujiAcres[i];
     totalAcres += galaAcres[i];
     totalAcres += pinkAcres[i];
@@ -69,8 +70,8 @@ console.log(totalAcres)
     Log `averageDailyAcres` to the console.
 */
 
-// I was considering pickedDays = fujiAcres.length + galaAcres.length + pinkAcres.length.  That would have been better if the list would have changed in anyway in the future but 7 days in the week is obviously constant.
-const pickedDays = 21
+//I was considering pickedDays = fujiAcres.length + galaAcres.length + pinkAcres.length.  That would have been better if the list would have changed in anyway in the future but 21 days is a good solution for this problem.
+const pickedDays = 21;
 const averageDailyAcres = totalAcres / pickedDays
 
 console.log(averageDailyAcres)
@@ -103,7 +104,7 @@ console.log(averageDailyAcres)
     any Math methods. 
 
 */
-
+// while loop increases and decreases variables to find solution.
 let acresLeft = 174 
 let days = 0
 
@@ -137,6 +138,7 @@ console.log(days)
     values to the new arrays.
 */
 
+//Using push to add items to empty arrays. Finding yield by tons. Side note: push=append in python
 let fujiTons = []
 let galaTons = []
 let pinkTons = []
@@ -166,6 +168,7 @@ console.log(pinkTons)
     Hint: there are 2000 pounds in a ton.
 */
 
+// total lbs picked per variety
 let fujiPounds = 0
 let galaPounds = 0
 let pinkPounds = 0
@@ -197,14 +200,14 @@ console.log(pinkPounds)
     console. 
 */
 
-
+// total profit calculation using template strings in log.
 let fujiProfit = fujiPounds * fujiPrice
 let galaProfit = galaPounds * galaPrice
 let pinkProfit = pinkPounds * pinkPrice
 
-console.log("$", fujiProfit)
-console.log("$", galaProfit)
-console.log("$", pinkProfit)
+console.log(`$${fujiProfit}`)
+console.log(`$${galaProfit}`)
+console.log(`$${pinkProfit}`)
 
 
 // PROBLEM 7
@@ -217,5 +220,6 @@ console.log("$", pinkProfit)
     Log `totalProfit` to the console.
 */
 
+//combining profit associated with each variety.
 let totalProfit = fujiProfit + galaProfit + pinkProfit
-console.log("$", totalProfit)
+console.log(`$${totalProfit}`)

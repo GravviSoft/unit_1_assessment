@@ -9,7 +9,7 @@
     It should be a string containing your best definition of what Git is.
 */
 
-const gitDefinition = "Git allows you to save your progress to a local repo.  Unlike Github, it does not save it outside of your local computer, but it does give an opportunity to save progress to local repos."
+const gitDefinition = "Git allows you to track and save your progress to a local repo.  Unlike Github, it does not save it outside of your local computer, but it does give an opportunity to save progress to local repos."
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -17,7 +17,7 @@ const gitDefinition = "Git allows you to save your progress to a local repo.  Un
     It should be a string containing your best definition of what GitHub is.
 */
 
-const gitHubDefinition = "Github provides a way to push projects from a local computer to a remote repo.  It provides a safehaven for projects that would otherwise be destroyed if anything happened to your local computer.  It allows for easy collaboration among programmers living in different areas of the country, among other benefits."
+const gitHubDefinition = "Github(owned by Microsoft) provides a way to push projects from a local computer to a remote repo.  It provides a safehaven for projects that would otherwise be destroyed if anything happened to your local computer.  It allows for easy collaboration among programmers living in different areas of the country, among other benefits."
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -41,7 +41,7 @@ const gitCloneDefinition = "Clones a repo into a new directory."
     It should be a string containing your best definition of what 'git status' does.
 */
 
-const gitStatusDefinition = "Lets you view all files going to be saved during commit."
+const gitStatusDefinition = "Gives info on the state of the repo.  For instance, it lets you view all changes being tracked and those untracked files and changes."
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -52,7 +52,7 @@ const gitStatusDefinition = "Lets you view all files going to be saved during co
     It should be a string containing the code to add all files.
 */
 
-const gitAddDefinition = "git add adds files to the repo."
+const gitAddDefinition = "git add adds files to be tracked.  You're basically telling git to keep an eye on these files before commit."
 
 const gitAddCode = "git add ."
 
@@ -65,7 +65,7 @@ const gitAddCode = "git add ."
     It should be a string containing the code to commit using the message "initial commit".
 */
 
-const gitCommitDefinition = "Commits changes to the repo."
+const gitCommitDefinition = "Creates a snapshot of the repo."
 
 const gitCommitCode = "git commit -m 'initial commit'" 
 
