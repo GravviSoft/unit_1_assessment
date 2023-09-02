@@ -169,15 +169,15 @@ console.log(pinkTons)
     Hint: there are 2000 pounds in a ton.
 */
 
-//Total lbs picked per variety is calculated.
+//Total lbs picked per variety is calculated by multiplying tons per acre by 2000.  The variables increase on each iteration of the loop.
 let fujiPounds = 0
 let galaPounds = 0
 let pinkPounds = 0
 
 for (let i = 0; i < 7; i++){
-    fujiPounds = fujiTons[i] * 2000;
-    galaPounds = galaTons[i] * 2000;
-    pinkPounds = pinkTons[i] * 2000;
+    fujiPounds += fujiTons[i] * 2000;
+    galaPounds += galaTons[i] * 2000;
+    pinkPounds += pinkTons[i] * 2000;
 }
 
 console.log(fujiPounds)
@@ -201,10 +201,10 @@ console.log(pinkPounds)
     console. 
 */
 
-//Total profit calculation for each variety. Involves multiplying lbs by price per lb. Template strings used in log.
-let fujiProfit = fujiPounds * fujiPrice
-let galaProfit = galaPounds * galaPrice
-let pinkProfit = pinkPounds * pinkPrice
+//Total profit calculation for each variety. Involves multiplying lbs by price per lb. I noticed it calculated to cents unless i conveted to dollars. Template strings used in log.
+let fujiProfit = fujiPounds * fujiPrice / 100 
+let galaProfit = galaPounds * galaPrice / 100
+let pinkProfit = pinkPounds * pinkPrice / 100
 
 console.log(`$${fujiProfit}`)
 console.log(`$${galaProfit}`)
