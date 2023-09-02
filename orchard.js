@@ -105,7 +105,7 @@ console.log(averageDailyAcres)
 
 */
 
-//While loop increases and decreases variables to find solution.
+//While loop increases and decreases variables after each iteration of the loop to find solution.
 let acresLeft = 174 
 let days = 0
 
