@@ -49,7 +49,7 @@ const pinkPrice = .55
     Log `totalAcres` to the console.
 */
 
-// calculates total acres picked.
+//Calculates total acres picked.
 let totalAcres = 0;
 
 for (let i = 0; i < 7; i++){
@@ -70,7 +70,7 @@ console.log(totalAcres)
     Log `averageDailyAcres` to the console.
 */
 
-//I was considering pickedDays = fujiAcres.length + galaAcres.length + pinkAcres.length.  That would have been better if the list would have changed in anyway in the future but 21 days is a good solution for this problem.
+//I was considering pickedDays = fujiAcres.length + galaAcres.length + pinkAcres.length.  That would have been better if the lists would have changed in anyway in the future but 21 days is sufficient for this problem.
 const pickedDays = 21;
 const averageDailyAcres = totalAcres / pickedDays
 
@@ -104,7 +104,8 @@ console.log(averageDailyAcres)
     any Math methods. 
 
 */
-// while loop increases and decreases variables to find solution.
+
+//While loop increases and decreases variables to find solution.
 let acresLeft = 174 
 let days = 0
 
@@ -168,7 +169,7 @@ console.log(pinkTons)
     Hint: there are 2000 pounds in a ton.
 */
 
-// total lbs picked per variety
+//Total lbs picked per variety is calculated.
 let fujiPounds = 0
 let galaPounds = 0
 let pinkPounds = 0
@@ -200,7 +201,7 @@ console.log(pinkPounds)
     console. 
 */
 
-// total profit calculation using template strings in log.
+//Total profit calculation for each variety. Involves multiplying lbs by price per lb. Template strings used in log.
 let fujiProfit = fujiPounds * fujiPrice
 let galaProfit = galaPounds * galaPrice
 let pinkProfit = pinkPounds * pinkPrice
@@ -220,6 +221,6 @@ console.log(`$${pinkProfit}`)
     Log `totalProfit` to the console.
 */
 
-//combining profit associated with each variety.
+//Combining profit associated with each variety.
 let totalProfit = fujiProfit + galaProfit + pinkProfit
 console.log(`$${totalProfit}`)
